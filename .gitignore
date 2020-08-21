@@ -1,0 +1,63 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+
+
+### Gulp ###
+package.json
+/node_modules/
+
+
+### Atom ###
+.ftpconfig
+.sftpconfig
+
+
+### Compiled Source ###
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+
+### Compressed Packages ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
+### Logs and Databases ###
+*.log
+*.sql
+*.sqlite
+
+
+### MacOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
