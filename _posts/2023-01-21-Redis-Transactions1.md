@@ -1,10 +1,13 @@
 ---
-layout: post
 title: Redis 동시성 처리와 트랜잭션 ① - Redis의 트랜잭션 명령어
-tags: [Redis, DB]
+date: 2023-01-21 10:00:00 +0900
+categories: [Database]
+tags: [Redis, Database]
 ---
 
 최근에 코드를 짜다가 Redis의 동시성 처리를 제대로 해주지 못해서 이슈가 발생했어서, 공부해본 내용을 정리해보려고 한다.
+
+-------
 
 ## 동시성 문제
 ```kotlin
@@ -43,6 +46,8 @@ if (value == null) {
 
 그러므로 조회와 저장이 하나의 단위 즉, 트랜잭션으로 묶여야 의도한대로 수행할 수 있다.
 
+-------
+
 ## Redis의 트랜잭션
 NoSql에서의 트랜잭션은 RDBMS의 트랜잭션과 무엇이 다를까?
 
@@ -61,6 +66,7 @@ Redis는 메인 스레드 1개에서 사용자 명령어를 처리하기 때문�
 
 `appendonly` 옵션을 통해서 지속성을 올릴 수 있다고 한다. (대신 성능이 안좋아진다고 한다)
 
+-------
 ## Redis의 트랜잭션 명령어
 MySQL에 트랜잭션 명령어로 START TRANSACTION, COMMIT, ROLLBACK 이 있다고 한다면, Redis에는 다음의 [트랜잭션 명령어](https://redis.io/docs/manual/transactions/)들이 있다.
 
@@ -121,7 +127,8 @@ EXEC
 이렇게 Watch를 사용하면, Watch와 Exec 사이에 다른 클라이언트가 mykey의 값을 변경하면 트랜잭션이 실패한다.
 트랜잭션이 실패할 경우, 경쟁 상태가 일어나지 않기를 바라며 해당 명령들을 다시 수행해주면 된다. 
 
-## lua script
+-------
+## Lua Script
 위의 트랜잭션 명령어를 사용하면 가장 처음에 예시로 들었던 동시성 문제를 해결할 수 있을까?
 ```kotlin
 val value = redisRepository.find(key) // key 조회
@@ -141,5 +148,7 @@ Redis 2.6.0부터 사용할 수 있는 기능인데, Lua script에 명령들을 
 여러가지 명령어들을 조합하고 복잡한 로직을 추가할 수 있을 뿐만 아니라, 전체 스크립트 자체가 하나의 명령어로 해석되기 때문에 atomic하게 처리된다.
 
 Lua Script를 작성해서 문제를 해결하지는 않았어서, 해당 방식에 대해 더 궁금하신 분들은 [Redis 문서](https://redis.io/docs/manual/programmability/eval-intro/)를 참고하시면 좋을 것 같다.
+
+-------
 
 다음 글에서는 Spring 어플리케이션에서 어떻게 Redis 트랜잭션을 이용할 수 있는지, 그리고 결국 동시성 문제는 어떻게 해결했는지에 대해서 더 알아보겠다.
