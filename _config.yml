@@ -19,7 +19,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: SooKim1110's Development Blog                          # the main title
+title: Jisoo Kim's DevBlog                       # the main title
 
 tagline: Sharing my thoughts and what I learned   # it will display as the sub-title
 
@@ -117,7 +117,7 @@ assets:
 pwa:
   enabled: true   # the option for PWA feature
 
-paginate: 10
+paginate: 5
 
 # ------------ The following options are not recommended to be modified ------------------
 
