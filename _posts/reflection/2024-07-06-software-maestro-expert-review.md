@@ -24,11 +24,11 @@ SOMA Expert는 정식 기술 멘토라기보다는 연수생들의 선배 역할
 
 실제로 아래와 같이 자기소개서를 작성했다.
 
-![](/assets/images/reflection/software-maestro-expert-review/img1.png){: w="700" }
+![img1](/assets/images/reflection/software-maestro-expert-review/img1.png){: w="700" }
 
 그리고 연수생 분들이 멘토링에서 무엇을 배울 수 있을지 구체적인 그림을 그릴 수 있도록 얻어갈 수 있는 점에 대해서도 적어보았다.
 
-![](/assets/images/reflection/software-maestro-expert-review/img2.png){: w="700" }
+![img2](/assets/images/reflection/software-maestro-expert-review/img2.png){: w="700" }
 
 노션의 다른 Expert 분들의 자기소개서를 읽으니 다양한 경험이 많으셔서 내가 경쟁력이 있을까 싶었는데, 다행히 꽤 많은 연수생분들이 노션을 보고 먼저 연락을 주셨다.
 
@@ -54,7 +54,7 @@ SOMA Expert는 정식 기술 멘토라기보다는 연수생들의 선배 역할
 
 해당 주제들에 대해서 멘토링 시간마다 간단한 ppt 자료를 준비해서 알고 있는 지식들을 하나씩 전달했다.
 
-![](/assets/images/reflection/software-maestro-expert-review/img3.png){: w="700" }
+![img3](/assets/images/reflection/software-maestro-expert-review/img3.png){: w="700" }
 
 각 주제에 대해 얘기할 때 최대한 실제 현업에서는 어떻게 적용이 되고 있는지, 소프트웨어 마에스트로 활동을 하면서는 무엇을 적용해볼 수 있는지를 함께 얘기하려고 했다.
 
@@ -77,7 +77,7 @@ SOMA Expert는 정식 기술 멘토라기보다는 연수생들의 선배 역할
 회사를 어느정도 다니며 처음의 열정은 조금 잃었던 것 같은데, 연수생 분들이 열정적으로 프로젝트를 하는 모습, 멘토링을 재밌게 들어주는 모습을 보면서 동기부여도 많이 되었다.
 그래서 올해 이런 멘토링 활동을 한 것이 너무 잘한 일이라는 생각이 든다!
 
-![](/assets/images/reflection/software-maestro-expert-review/img4.png){: w="500" }
+![img4](/assets/images/reflection/software-maestro-expert-review/img4.png){: w="500" }
 
 아쉬웠던 점은 실제 개발은 6월 중순정도에야 시작해서 연수생분들의 실제 프로젝트 코드를 함께 살펴보며 이야기를 나누지 못한 점이 조금 아쉽다.
 그리고, 공유드릴 내용의 준비를 그때그때 했던 것 같아서 다음에는 조금 더 체계적으로 계획을 세우는 것이 좋을 것 같다.
