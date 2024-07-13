@@ -1,7 +1,7 @@
 ---
 title: 부딪히며 배우는 Golang 백엔드 개발 - ① 에러 처리 및 응답 작성
 date: 2024-07-10 22:30:00 +0900
-categories: [Go]
+categories: [Programming Languages, Go]
 tags: [Go, Golang, 에러처리, 백엔드]
 ---
 
